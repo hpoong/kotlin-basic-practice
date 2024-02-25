@@ -1,9 +1,59 @@
 package com.kotlinproject.start
 
 import java.util.*
+import kotlin.math.max
+import kotlin.math.min
 import kotlin.random.Random
 
 fun main() {
+
+    // *************** Hello World
+    println("Hello World")
+
+
+
+    // *************** 변수
+    var ch01_num: Int = 10              // 타입 선언
+    var ch01_name: String = "준석"       // 타입 선언
+    var ch01_point = 3.3                // 타입 선언 x
+    ch01_num = 20
+
+
+
+    // *************** 상수
+    val ch02_num = 10;
+//    ch02_num =20;       // error
+
+
+
+    // *************** 형변환
+    var ch03_num_i = 10
+    var ch03_num_l = 20L
+
+    ch03_num_l = ch03_num_i.toLong();      // int to long
+    ch03_num_i = ch03_num_l.toInt();       // long to int
+//    ch03_num_l = (Long) ch03_num_i;      // error
+
+    val ch03_name = "20";
+    ch03_num_i = ch03_name.toInt();
+
+
+
+    // *************** String
+    var ch04_name = "hello";
+    println(ch04_name.toUpperCase())
+    println(ch04_name.toLowerCase())
+    println(ch04_name[0])
+    println("제 이름은 ${ch04_name} 입니다.")
+    println("제 이름은 ${ch04_name + 10} 입니다.")
+
+
+
+    // *************** max, min
+    var ch05_num1 = 10
+    var ch05_num2 = 20
+    print(max(ch05_num1, ch05_num2))
+    print(min(ch05_num1, ch05_num2))
 
 
     // ******* random
